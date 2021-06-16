@@ -24,6 +24,11 @@ To drop the collection named 'content' : db.content.drop()
 MongoDB commands for Rows: 
 ===========================
 
+To show all rows in collection 'comments': 
+db.comments.find()
+db.comments.find().pretty()
+db.comments.find().pretty().limit(2)
+
 Command to insert the row inside collection 'comments' : 
 db.comments.insert({
     'name' : 'Atharva',
@@ -33,3 +38,53 @@ db.comments.insert({
 
 command to insert the multiple row (array of objects) in 'comments' collection:
 
+>db.comments.insertMany([
+    {
+        'name' : 'Atharva',
+        'lang' : 'JavaScript',
+        'member_since' : 5
+    },
+    {
+        'name' : 'Jiganesh',
+        'lang' : 'Python',
+        'member_since' : 3
+    },
+    {
+        'name' : 'Omkar',
+        'lang' : 'Java',
+        'member_since' : 6
+    },
+    {
+        'name' : 'Saurabh',
+        'lang' : 'C++',
+        'member_since' : 4
+    }
+])
+
+To search object from database which uses lang 'Python':
+>db.comments.find({'lang' : 'Python'})
+
+To count the number of rows in the output:
+>db.comments.find().count()
+
+To sort the rows according to the 'member_since'
+
+For ascending order
+> db.comments.find().sort({member_since:1}).pretty()
+
+For descending order
+> db.comments.find().sort({member_since:-1}).pretty()
+
+To find only 1 member matching the object
+> db.comments.findOne({name:'Atharva'}) 
+
+
+To update the row: 
+
+> db.comments.update({name: 'Atharva'}, 
+    {
+        'name': 'Atharva',
+        'lang': 'JavaScript',
+        'member_since': 51,
+    }
+) 
