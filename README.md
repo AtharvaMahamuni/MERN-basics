@@ -1,2 +1,3 @@
-# mongodb
-This is the repository for the mongodb commands for my future reference.
+# MERN
+
+Repository for the reference of MongoDB, Express, React and Node
