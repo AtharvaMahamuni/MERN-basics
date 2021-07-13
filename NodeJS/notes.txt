@@ -1,0 +1,33 @@
+What is NodeJS?
+
+- Runtime environement for JavaScript which runs on Server
+- Asynchronous Non-Blocking I/O Model
+-  
+
+
+
+The basics of frontend and backend
+
+Client(HTML, CSS, JS)         ------------------->          Server (NodeJS)
+
+Request                             ----->                  
+
+
+                                    <-----                   Response
+
+
+// In nodeJS single thread can manage multiple connections 
+// This is possible becuse non-blocking I/O.    
+
+// npm init = To create the package.
+
+// npm install express --save => It will create node_module and install the express in our package
+
+//node modules have dependencies which get install from the internet
+
+// we installed nodemon globally using (sudo npm i -g nodemon) 
+
+// (npm install --save-dev nodemon) using this we can use nodemon only as dev dependencies i.e. it can be only used at the time of development.
+
+// (npm uninstall nodemon) It will uninstall the nodemon modules
+// (npm uinstall express) It will uninstall the express
