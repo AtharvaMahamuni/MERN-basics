@@ -1,4 +1,5 @@
 const http = require('http');
+const fs = require('fs');
 
 const port = process.env.PORT || 3000;
 
@@ -16,7 +17,13 @@ const server = http.createServer((req, res) => {
     else if(req.url == '/about'){
         res.end('<h1> About Atharva </h1> <p> This is my about section </p>');
     }
+    else if(req.url == '/hello'){
+        res.statusCode = 200;
+        const data = fs.readFileSync('index.html');
+        res.end(data.toString());
+    }
     else {
+        // crash;
         res.statusCode = 404;
         res.end('<h1> Not found </h1><p> This page is not found on the server</p>');
     }
