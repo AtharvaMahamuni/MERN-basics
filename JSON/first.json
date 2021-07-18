@@ -1,0 +1,12 @@
+{
+    "name": "atharva",
+    "score": 11.75,
+    "isAdmin": true,
+    "license": null,
+    "shopItem": ["food", "clothes", "sunflower oil"],
+    "myObj": {
+        "name": "nested",
+        "marks": 99,
+        "subject": ["maths", "physics", "pshycology", {"a": true}]
+    }
+}
