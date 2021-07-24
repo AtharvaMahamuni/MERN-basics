@@ -1,0 +1,19 @@
+Alien
+
+Name
+Tech
+Sub  True, False
+
+
+Web browser
+
+REST API -> Uses HTTP -> GET, POST, PATCH/PUT, DELETE
+
+Mongodb
+
+
+GET http://localhost:9000/aliens
+GET http://localhost:9000/aliens/<id>
+POST http://localhost:9000/aliens
+PATCH http://localhost:9000/aliens/<id>
+DELETE http://localhost:9000/aliens/<id>

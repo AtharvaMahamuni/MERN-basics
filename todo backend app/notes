@@ -1,0 +1,28 @@
+// Delete records individually throgh API access -> driver of the database.
+
+
+MongoDB -> mongo -> queries (certain syntax way of extracting data) -> database engine (it makes sense of where the data you want is stored on the disk) -> sends you relevant data back.
+
+
+// SQL v/s NoSQL
+
+SQL = Structured Querying Language
+SQL : Stored in RDBMS format(tables, rows, columns)
+Database Engine = what data you want throgh SQL
+This format is vertically scalable
+
+
+NoSQL = It is usually NOT RDBMS
+NoSQL : {"key": "value", "key2": 2}
+They are horizontally scalable
+
+
+Database
+Collection(s)
+Conllection -> Document(s)
+Document -> JSON-like structure -> Key-Value pairs
+
+
+// What is Mongoose
+Sits on top of mongodb native driver(mongodb)
+
